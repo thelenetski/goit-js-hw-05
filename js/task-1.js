@@ -1,13 +1,7 @@
 'use strict';
 
 const getUserNames = users => {
-  let usersNames = [];
-
-  users.forEach(element => {
-    usersNames.push(element.name);
-  });
-
-  return usersNames;
+  return users.map(element => element.name);
 };
 
 console.log(
